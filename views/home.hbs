@@ -1,0 +1,130 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Main Page</title>
+    <style>
+    h1 {
+      font-size: 60px;
+      font-style: times new roman;
+      color: #FFFFFF;
+    }
+    p {
+      font-style: times new roman;
+      color: #FFFFFF;
+    }
+    input#get {
+       width:120px;
+       height:30px;
+       top:200px;
+       left:620px;
+       background-color:#FAEBD7;
+       color:#000000;
+       border-radius:50px;
+       text-align:center;
+       font-style: times new roman;
+       font-size: 20px;
+       /*box-shadow: 0px 0px 0px #999;*/
+     }
+     body {
+       /*height: 100%;*/
+       background-color: #FAEBD7;
+       background: url("https://ak5.picdn.net/shutterstock/videos/535255/thumb/1.jpg") no-repeat center center fixed;
+       text-align:center;
+       margin:70px 0px; padding:0px;
+       -webkit-background-size: cover;
+       -moz-background-size: cover;
+       -o-background-size: cover;
+       background-size: cover;
+     }
+
+     /*html {
+  background: url("https://ak5.picdn.net/shutterstock/videos/535255/thumb/1.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}*/
+
+
+    </style>
+  </head>
+  <body>
+    <h1 id = "head">SHERLOCK NEWS SERVICE</h1>
+    <p>Sherlock news service provides you the current top 10 articles from well known news services around the globe like The New York Times, Bloomberg, etc.</p>
+    <form method="post" action="/getNews">
+    <select class="source" name="source">
+  <option value="abc-news-au">ABC News (AU)</option>
+  <option value="al-jazeera-english">Al Jazeera English</option>
+  <option value="ars-technica">Ars Technica</option>
+  <option value="associated-press">Associated Press</option>
+  <option value="bbc-news">BBC News</option>
+  <option value="bbc-sport">BBC Sport</option>
+  <option value="bild">Bild</option>
+  <option value="bloomberg">Bloomberg</option>
+  <option value="breitbart-news">Breitbart News</option>
+  <option value="buzzfeed">Buzzfeed</option>
+  <option value="business-insider">Business Insider</option>
+  <option value="business-insider-uk">Business Insider(UK)</option>
+  <option value="cnbc">CNBC</option>
+  <option value="cnn">CNN</option>
+  <option value="daily-mail">Daily Mail</option>
+  <option value="der-tagesspiegel">Der Tagesspiegel</option>
+  <option value="die-zeit">Die Zeit</option>
+  <option value="engadget">Engadget</option>
+  <option value="entertainment-weekly">Entertainment Weekly</option>
+  <option value="espn">ESPN</option>
+  <option value="espn-cric-info">ESPN Cricket Info</option>
+  <option value="financial-times">Financial Times</option>
+  <option value="focus">Focus</option>
+  <option value="football-italia">Football Italia</option>
+  <option value="fortune">Fortune</option>
+  <option value="four-four-two">FourFourTwo</option>
+  <option value="fox-sports">Fox Sports</option>
+  <option value="google-news">Google News</option>
+  <option value="gruenderszene">Gruenderszene</option>
+  <option value="hacker-news">Hacker News</option>
+  <option value="handelsblatt">Handelsblatt</option>
+  <option value="ign">IGN</option>
+  <option value="independent">Independent</option>
+  <option value="mashable">Mashable</option>
+  <option value="metro">Metro</option>
+  <option value="mirror">Mirror</option>
+  <option value="mtv-news">MTV News</option>
+  <option value="mtv-news-uk">MTV News(UK)</option>
+  <option value="national-geographic">National Geographic</option>
+  <option value="new-scientist">New Scientist</option>
+  <option value="newsweek">Newsweek</option>
+  <option value="new-york-magazine">New York Magazine</option>
+  <option value="nfl-news">NFL News</option>
+  <option value="polygon">Polygon</option>
+  <option value="recode">Recode</option>
+  <option value="reddit-r-all">Reddit</option>
+  <option value="reuters">Reuters</option>
+  <option value="spiegel-online">Spiegel Online</option>
+  <option value="t3n">T3N</option>
+  <option value="talksport">TalkSport</option>
+  <option value="techcrunch">TechCrunch</option>
+  <option value="techradar">TechRadar</option>
+  <option value="the-economist">The Economist</option>
+  <option value="the-guardian-au">The Guardian(AU)</option>
+  <option value="the-guardian-uk">The Guardian(UK)</option>
+  <option value="the-hindu">The Hindu</option>
+  <option value="the-huffington-post">The Huffington Post</option>
+  <option value="the-lad-bible">The Lad Bible</option>
+  <option value="the-new-york-times">The New York Times</option>
+  <option value="the-next-web">The Next Web</option>
+  <option value="the-sport-bible">The Sport Bible</option>
+  <option value="the-telegraph">The Telegraph</option>
+  <option value="the-times-of-india">The Times of India</option>
+  <option value="the-verge">The Verge</option>
+  <option value="the-wall-street-journal">The Wall Street Journal</option>
+  <option value="the-washington-post">The Washington Post</option>
+  <option value="time">Time</option>
+  <option value="usa-today">USA Today</option>
+  <option value="wired-de">Wired</option>
+  <option value="wirtschafts-woche">Wirtschafts Woche</option>
+</select>
+<input id = "get" type="submit" value="Get News">
+</form>
+  </body>
+</html>
